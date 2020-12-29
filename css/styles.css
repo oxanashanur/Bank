@@ -1,0 +1,1206 @@
+body,
+td {
+  font: normal 100%/1.5em "ALS Hauss", "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-promo {
+  background: url("../image/Promo_desk.svg");
+}
+.container-benefits {
+  border-bottom: 1px solid #e1e1e3;
+}
+.container-calculate {
+  background: #f4f4f4;
+}
+.container-mobile {
+  background: #424548;
+}
+.container-info {
+  border-top: 1px solid #e1e1e3;
+  margin-top: 90px;
+}
+.container-footer {
+  border-top: 1px solid #e1e1e3;
+}
+.container .cols {
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 13px;
+  line-height: 18px;
+}
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.cclearfix:before,
+.cclearfix:after {
+  content: "";
+  display: table;
+}
+.container:after,
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.row {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*               Header             */
+.header {
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+}
+.menu {
+  display: block;
+  height: auto;
+}
+.menu__item {
+  display: inline-block;
+  margin-top: 25px;
+}
+.menu__item_raiff {
+  width: 170px;
+  height: 36px;
+  margin-left: 25px;
+  display: inline-block;
+  background: url("../image/Raiff_logo.svg") no-repeat;
+}
+.menu__item_line {
+  border-left: 1px solid rgb(158, 163, 158);
+  height: 36px;
+  margin-left: 30px;
+}
+.menu__item_visa {
+  width: 87px;
+  height: 28px;
+  display: inline-block;
+  background: url("../image/Visa_Logo.svg") no-repeat;
+  margin-left: 35px;
+  margin-top: 25px;
+  vertical-align: top;
+}
+.menu__item_phone {
+  float: right;
+  margin-right: 20px;
+}
+.phone__number {
+  display: block;
+  font-family: "ALS Hauss";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #2b2d33;
+  margin-top: -6px;
+}
+.phone__info {
+  display: block;
+  font-family: "ALS Hauss";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #808185;
+}
+.phone__contact {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .phone__number,
+  .phone__info {
+    display: none;
+  }
+  .phone__contact {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../image/contact.svg") no-repeat;
+  }
+}
+@media screen and (max-width: 540px) {
+  .menu__item_line {
+    margin-left: 0;
+  }
+  .menu__item_raiff {
+    width: 150px;
+  }
+  .menu__item_visa {
+    margin-left: 15px;
+  }
+}
+
+/*              Promo               */
+.promo {
+  width: 100%;
+  height: 550px;
+  display: inline-block;
+  padding-left: 130px;
+}
+.promo__sticker {
+  width: 231px;
+  height: 29px;
+  background: url("../image/Progress.png") no-repeat;
+  margin-top: 80px;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 7px;
+  padding-left: 12px;
+}
+.promo__sticker-mob {
+  display: none;
+  width: 231px;
+  height: 29px;
+  background: url("../image/Progress_mob.png") no-repeat;
+  margin-top: 80px;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 7px;
+  padding-left: 12px;
+}
+h1 {
+  font-family: "Navigo";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+}
+h2 {
+  font-family: "Navigo";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #2b2d33;
+}
+.promo__percent {
+  margin-top: -130px;
+}
+.promo__percent_number {
+  display: inline-block;
+  font-family: "Navigo";
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: white;
+}
+.promo__percent_percent {
+  display: inline-block;
+  font-family: "Navigo";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: white;
+}
+.promo__button {
+  display: block;
+  height: 54px;
+  width: 213px;
+  border-radius: 10px;
+  padding-top: 5px;
+  background-color: #fee600;
+  margin-top: -50px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.button-text {
+  font-family: "ALS Hauss";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2b2d33;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .promo {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .promo__percent_number {
+    font-size: 86px;
+    line-height: 50px;
+  }
+  .promo__percent {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 20px;
+  }
+  .container-promo {
+    height: 490px;
+  }
+  .promo {
+    padding-left: 0;
+    text-align: left;
+    padding-right: 0;
+  }
+  .promo__sticker {
+    display: none;
+    margin-top: 30px;
+  }
+  .promo__sticker-mob {
+    width: 171px;
+    height: 34px;
+    background: url("../image/Progress_mob.png") no-repeat;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 7px;
+    padding-left: 12px;
+    display: block;
+    margin-left: 30px;
+  }
+  .promo__title {
+    font-family: "Navigo";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.20000000298023224px;
+    margin-left: 30px;
+  }
+  .promo__percent_number {
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.20000000298023224px;
+    margin-left: 30px;
+  }
+  .promo__percent_percent {
+    font-size: 42px;
+    line-height: 72px;
+    letter-spacing: -0.20000000298023224px;
+  }
+  .promo__percent {
+    margin-top: -90px;
+  }
+  .promo__button {
+    display: block;
+    height: 54px;
+    width: 100%;
+    margin-top: 180px;
+    border-radius: 0;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-promo {
+    height: 490px;
+    background: url("../image/Promo_mob.svg");
+  }
+}
+
+/*                  Benefits               */
+.benefits {
+  width: 100%;
+}
+.benefits__item {
+  display: inline-block;
+  width: 24.8%;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.benefits__item_big-size {
+  display: inline-block;
+  font-family: "Navigo";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0em;
+  color: #2b2d33;
+  margin-top: 20px;
+}
+.benefits__item_small-size {
+  display: inline-block;
+  font-family: "Navigo";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0em;
+  color: #2b2d33;
+}
+.benefits__item_text {
+  font-family: "ALS Hauss";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #808185;
+  margin-top: -55px;
+}
+.benefits__item_text-mob {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .benefits__item-none {
+    display: none;
+  }
+  .benefits__item {
+    width: 33%;
+  }
+  .benefits__item_small-size {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container-benefits {
+    padding-bottom: 50px;
+  }
+  .benefits__item-none {
+    display: none;
+  }
+  .benefits__item {
+    margin-top: 40px;
+  }
+  .benefits__item_text-mob {
+    display: block;
+    font-family: "ALS Hauss";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #808185;
+    margin-top: -55px;
+  }
+  .benefits__item_text-web {
+    display: none;
+  }
+  .benefits__item_text {
+    margin-bottom: -30px;
+  }
+}
+
+/*                  Cashback                   */
+.cashback {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.cashback__item {
+  display: inline-block;
+  width: 24.8%;
+  height: 180px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  background: #29476b;
+  border-radius: 10px;
+  margin-right: 24px;
+}
+.cashback__item:last-child {
+  margin-right: 0px;
+}
+.cashback__item_text {
+  display: block;
+  font-family: "ALS Hauss";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  float: left;
+  color: white;
+  padding-top: 60px;
+  padding-left: 20px;
+  text-align: left;
+}
+.cashback__item_img-cash {
+  display: block;
+  width: 160px;
+  height: 130px;
+  background: url("../image/cash.svg") no-repeat;
+  margin-top: 25px;
+  margin-right: 30px;
+  float: right;
+}
+.cashback__item_img-bag {
+  display: block;
+  width: 131px;
+  height: 203px;
+  background: url("../image/bag.svg") no-repeat;
+  margin-right: 30px;
+  float: right;
+}
+.cashback__item_img-car {
+  display: block;
+  width: 130px;
+  height: 154px;
+  background: url("../image/car.svg") no-repeat;
+  float: right;
+}
+@media screen and (max-width: 1300px) {
+  .cashback__item_text {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .cashback__item_img-cash {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .cashback {
+    margin-top: 40px;
+  }
+  .cashback__item {
+    display: block;
+    margin-left: 16px;
+    margin-right: 0;
+    width: 342px;
+    margin-top: 80px;
+  }
+  .cashback__item_text {
+    font-size: 22px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cashback__item {
+    display: block;
+    width: 92%;
+    height: 180px;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+}
+
+/*                     Calculate                   */
+.calculate {
+  width: 100%;
+  height: 710px;
+  text-align: center;
+  margin-top: 60px;
+}
+.calculate__heading-mob {
+  display: none;
+}
+.calculate-text {
+  color: #808185;
+  margin-top: -20px;
+  font-family: "ALS Hauss";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+.calculate-base {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+}
+.left {
+  display: inline-block;
+  width: 64%;
+  margin-left: 6%;
+  margin-top: 40px;
+  border-right: 1px solid#E1E1E3;
+}
+.right {
+  display: inline-block;
+  width: 16%;
+  margin-right: 6%;
+  margin-left: 5%;
+  vertical-align: top;
+  margin-top: 20px;
+}
+.sum,
+.time {
+  font-family: "ALS Hauss";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2b2d33;
+  text-align: left;
+}
+.time {
+  margin-top: 60px;
+}
+.result {
+  margin-left: 45%;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.result2 {
+  margin-left: 61%;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.slider,
+.slide2 {
+  display: block;
+  width: 300px;
+}
+.all-sum,
+.all-time {
+  display: block;
+  width: 100%;
+  font-family: "ALS Hauss";
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0px;
+  color: #a2a4a6;
+}
+.all-sum__min,
+.all-time__min {
+  display: block;
+  float: left;
+}
+.all-sum__max,
+.all-time__max {
+  display: block;
+  float: right;
+  margin-right: 12%;
+}
+.calculate-info {
+  font-family: "ALS Hauss";
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #a2a4a6;
+  margin-top: 70px;
+}
+.calculate-info__mob {
+  display: none;
+}
+.rate__percent,
+.payment__rub {
+  display: block;
+  font-family: "Navigo";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0px;
+  color: #2b2d33;
+  text-align: left;
+}
+.rate__text,
+.payment__text {
+  display: block;
+  font-family: "ALS Hauss";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2b2d33;
+  text-align: left;
+  margin-top: -23px;
+}
+.payment {
+  margin-top: 56px;
+}
+.calculate__button {
+  display: block;
+  height: 54px;
+  width: 213px;
+  border-radius: 10px;
+  padding-top: 5px;
+  background-color: #fee600;
+  margin-top: 50px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .left {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container-calculate {
+    background: white;
+  }
+  .calculate {
+    margin-top: -20px;
+  }
+  .calculate-base {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .left {
+    display: block;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-right: none;
+  }
+  .right {
+    display: block;
+    width: 92%;
+    background-color: #f4f4ff;
+    border-radius: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .result,
+  .result2 {
+    margin-left: 10%;
+    font-size: 24px;
+  }
+  .calculate-info__web {
+    display: none;
+  }
+  .rate__percent,
+  .payment__rub {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .rate__text,
+  .payment__text {
+    text-align: center;
+    margin-top: -23px;
+    margin-bottom: -60px;
+  }
+  .calculate__button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 24px;
+  }
+  .calculate-info__mob {
+    display: block;
+    border-top: 1px solid #e1e1e3;
+    font-family: "ALS Hauss";
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #a2a4a6;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calculate__heading-mob {
+    display: block;
+  }
+  .calculate__heading-web,
+  .calculate-text__web {
+    display: none;
+  }
+  .calculate-text__mob {
+    display: block;
+  }
+}
+@media screen and (max-width: 540px) {
+  .calculate__heading-mob {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 120px;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .calculate-text__mob {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  .rate__percent,
+  .payment__rub {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .rate__text,
+  .payment__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .calculate-info__mob {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+/*                       Form                       */
+.form {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.form__item {
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+.form__item_img-doc {
+  display: block;
+  width: 20px;
+  height: 24px;
+  background: url("../image/doc.png") no-repeat;
+  float: left;
+  margin-left: 20px;
+}
+.form__item_img-message {
+  display: block;
+  width: 22px;
+  height: 24px;
+  background: url("../image/message.png") no-repeat;
+  float: left;
+  margin-left: 20px;
+}
+.form__item_img-card {
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../image/card.png") no-repeat;
+  float: left;
+  margin-left: 20px;
+}
+.form__item_text {
+  display: inline-block;
+  text-align: left;
+  margin-left: -20px;
+  color: #2b2d33;
+  font-family: "ALS Hauss";
+}
+.form-base {
+  width: 80%;
+  height: 510px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  border: 1px solid #e1e1e3;
+  border-radius: 10px;
+  position: relative;
+}
+.form-base__text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: "ALS Hauss";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #a2a4a6;
+}
+@media screen and (max-width: 1300px) {
+  .form__item {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .form {
+    margin-top: 260px;
+  }
+  .form__item {
+    display: block;
+    margin-left: 30%;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__item {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .form__item_text {
+    display: block;
+  }
+  .form__item_img-doc,
+  .form__item_img-message,
+  .form__item_img-card {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .form {
+    margin-top: 310px;
+  }
+  .form__heading {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+  }
+  .form-base {
+    width: 100%;
+    height: 450px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 0;
+    background-color: #f4f4f4;
+    margin-left: 0;
+  }
+}
+
+/*              Mobile              */
+.mobile {
+  width: 100%;
+  height: 780px;
+  text-align: center;
+  margin-top: 60px;
+}
+.mobile-title {
+  color: white;
+}
+.mobile-text {
+  font-family: "ALS Hauss";
+  color: white;
+  margin-top: -10px;
+}
+.mobile-base {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  height: 390px;
+  background: white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .mobile-title {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .mobile {
+    height: 630px;
+  }
+  .mobile-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 40px;
+  }
+}
+
+/*                   Carousel                 */
+#wrapper {
+  width: 100%;
+  max-width: 980px;
+  position: relative;
+  margin-left: 6.5%;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+#carousel {
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  margin-left: 120px;
+}
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  padding: 8px;
+  background-color: yellow;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(120%, -50%);
+  display: none;
+}
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(450%, -50%);
+}
+svg {
+  width: 24px;
+  height: 24px;
+}
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+.item {
+  width: 228px;
+  height: 311px;
+  background: #2b2d33;
+  padding-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+.mobile__button {
+  display: inline-block;
+  height: 54px;
+  width: 265px;
+  border-radius: 10px;
+  padding: 15px, 28px, 15px, 28px;
+  background-color: #fee600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  #carousel {
+    margin-left: 0;
+  }
+  #wrapper {
+    margin-left: 4%;
+  }
+  #prev {
+    transform: translate(250%, 200px);
+  }
+  #next {
+    transform: translate(-300%, 200px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  #wrapper {
+    width: 95%;
+  }
+  .item:first-child {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .mobile__button {
+    display: none;
+  }
+  .button-prev,
+  .button-next {
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+  }
+  #prev,
+  #next {
+    padding: 6px;
+    background-color: #424548;
+    border-radius: 7px;
+    border: 1px solid yellow;
+  }
+  #prev {
+    transform: translate(1000%, 200px);
+  }
+  #next {
+    transform: translate(-1000%, 200px);
+  }
+}
+@media screen and (max-width: 375px) {
+  #carousel {
+    margin-top: -30px;
+  }
+}
+
+/*           Info             */
+.info {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.info__text {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "ALS Hauss";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #55575c;
+}
+.info__text_bank {
+  display: block;
+  float: left;
+}
+.info__text_address {
+  display: block;
+  float: right;
+}
+@media screen and (max-width: 1100px) {
+  .info__text {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .info__text_bank,
+  .info__text_address {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container-info {
+    margin-top: 60px;
+  }
+}
+
+/*             Footer            */
+.footer {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer__info {
+  width: 90%;
+  height: 122px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow-y: scroll;
+}
+.footer__info_address {
+  font-family: "ALS Hauss";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #808185;
+  padding-right: 50px;
+}
+@media screen and (max-width: 540px) {
+  .footer__info {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 15px;
+  }
+  .footer__info_address {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/*               Fonts               */
+@font-face {
+  font-family: "Navigo";
+  src: local("Navigo Bold"), local("Navigo-Bold"),
+    url("../navigo/Navigo-Bold.woff2") format("woff2"),
+    url("../navigo/Navigo-Bold.woff") format("woff"),
+    url("../navigo/Navigo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Navigo";
+  src: local("Navigo Black"), local("Navigo-Black"),
+    url("../navigo/Navigo-Black.woff2") format("woff2"),
+    url("../navigo/Navigo-Black.woff") format("woff"),
+    url("../navigo/Navigo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ALS Hauss";
+  src: local("ALS Hauss Regular"), local("ALS-Hauss-Regular"),
+    url("../hauss/ALSHauss-Regular.woff2") format("woff2"),
+    url("../hauss/ALSHauss-Regular.woff") format("woff"),
+    url("../hauss/ALSHauss-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ALS Hauss";
+  src: local("ALS Hauss Medium"), local("ALS-Hauss-Medium"),
+    url("../hauss/ALSHauss-Medium.woff2") format("woff2"),
+    url("../hauss/ALSHauss-Medium.woff") format("woff"),
+    url("../hauss/ALSHauss-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
